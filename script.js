@@ -40,10 +40,10 @@ function generate(){
 }
 function copyCode(){
   const textarea = document.createElement("textarea");
-  const password = code.innerText;
+  const outputCode = code.innerText;
 
 
-  textarea.value = password;
+  textarea.value = outputCode;
   document.body.appendChild(textarea);
   textarea.select();
   document.execCommand("copy");
