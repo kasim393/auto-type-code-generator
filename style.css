@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=VT323&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'VT323', monospace;
+    margin: 0 auto;
+    background-color: rgb(20, 20, 20);
+    color: #ffffff;
+}
+.big-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  
+}
+.header-container{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.header-container i{
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s ;
+}
+.header-container i:hover{
+  transform: scale(1.2);
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.container {
+  color: #20C20E;
+    padding: 10px;
+    background-color: rgba(85, 85, 85, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    border: 2px solid #20C20E;
+    font-size: 1.4rem;
+    width: 900px;
+    margin: 2rem;
+}
+.container p {
+    font-size: 2rem;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    animation: cursor 1s step-end infinite;
+}
+@keyframes cursor {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+.input-container{
+  gap: 1rem;
+}
+.input-container label{
+  font-size: 1.5rem;
+}
+.input-container input[type=text]{
+  padding: 0.5rem;
+  width: 500px;
+  font-size: 1.5rem;
+  margin: 1rem;
+  
+}
+.input-container input[type=number]{
+  font-size: 1rem;
+  padding: 0.3rem;
+  margin: 1rem;
+}
+.submit-container{
+  margin: 1rem;
+}
+.submit-container button{
+  font-size: 2rem;
+  border: none;
+  border-radius: 3px;
+  width: 100px;
+  padding: 0.2rem;
+  font-family: inherit;
+  color: white;
+  cursor: pointer;
+  margin-inline: 2rem;
+}
+.submit-container .submit{
+  background-color: cornflowerblue;
+}
+
+.submit-container .reset{
+  background-color: crimson;
+}
+
+.generate{
+  font-size: 2rem;
+  border: none;
+  border-radius: 3px;
+  padding:  0.2rem 0.5rem;
+  font-family: inherit;
+  color: white;
+  cursor: pointer;
+  background-color: seagreen;
+}
+
+.code-container{
+  background-color: #2a2734;
+  padding: 1rem;
+  margin: 1rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.code-container button{
+  font-size: 2rem;
+  border: none;
+  background-color: goldenrod;
+  border-radius: 3px;
+  padding: 0.2rem 0.5rem;
+  font-family: 'VT323', monospace;
+  cursor: pointer;
+}
