@@ -42,7 +42,8 @@ a{
     border-radius: 2px;
     border: 2px solid #20C20E;
     font-size: 1.4rem;
-    width: 900px;
+    min-width: 500px;
+    width: auto;
     margin: 2rem;
 }
 .container p {
@@ -130,4 +131,34 @@ a{
   padding: 0.2rem 0.5rem;
   font-family: 'VT323', monospace;
   cursor: pointer;
+}
+
+@media screen and (max-width: 670px){
+
+  .input-container input[type=text]{
+    width: 300px;
+    font-size: 1rem;
+  }
+  .container{
+    min-width: 350px;
+  }
+}
+@media screen and (max-width: 550px){
+
+  .input-container input[type=text]{
+    width: 200px;
+    font-size: 1rem;
+  }
+  .container{
+    min-width: 300px;
+  }
+}
+@media screen and (max-width: 370px){
+
+  .input-container label{
+    font-size: 1.2rem;
+  }
+  .submit-container button{
+    margin-inline: 1rem;
+  }
 }
