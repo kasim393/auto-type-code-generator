@@ -16,4 +16,4 @@ This will generate js code. you can use in your project.
 [Demo](https://kasim393.github.io/auto-type-code-generator/)
 
 ## Video Tutorial
-coming soon..
+[Youtube](https://youtu.be/zAFbg99Ks58)
